@@ -3,7 +3,7 @@ import Pillar from '../Pillar/Pillar';
 
 export default function MissionPillars() {
   return (
-    <section className="flex flex-col w-full md:justify-center items-center bg-white md:bg-[#CEEDF4] py-12 space-y-10">
+    <section className="flex flex-col w-full md:justify-center items-center bg-white dark:bg-slate-800 dark:text-white md:bg-[#CEEDF4] py-12 space-y-10">
       <h2 className="md:uppercase font-bold md:font-light text-2xl md:text-5xl">
         Our Mission Pillars
       </h2>

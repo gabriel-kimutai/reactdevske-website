@@ -4,6 +4,7 @@ import Logo from '../Logo/Logo';
 
 import { ABOUT, CONTACT, EVENTS, HOME } from '../../util/routeConstants';
 import LinkButton from '../LinkButton/LinkButton';
+import ToggleButton from '../Button/ToggleButton';
 
 export default function Navbar() {
   return (
@@ -31,14 +32,7 @@ export default function Navbar() {
             </ul>
           </div>
           <div>
-            <LinkButton
-              className="flex justify-center items-center bg-[#EC0505] w-[203px] h-[46px] rounded-md text-base text-white font-montserrat font-bold"
-              href="https://bit.ly/joinreactdevske"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Join Community
-            </LinkButton>
+            <ToggleButton />
           </div>
         </nav>
       </header>

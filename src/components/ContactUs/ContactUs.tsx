@@ -20,8 +20,8 @@ export default function ContactUs() {
   if (!screenWidth) return null;
 
   return (
-    <section id="contact-us" className="min-h-screen bg-white pb-20">
-      <h2 className="font-montserrat text-base uppercase w-fit mx-auto py-5">
+    <section id="contact-us" className="min-h-screen bg-white dark:bg-slate-700 dark:text-white pb-20">
+      <h2 className="font-montserrat text-base uppercase w-fit mx-auto py-5 dark:text-white">
         Contact us
       </h2>
       {screenWidth < breakpoint ? <MobileVersion /> : <DesktopVersion />}

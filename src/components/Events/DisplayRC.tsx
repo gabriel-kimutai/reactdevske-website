@@ -14,7 +14,7 @@ export default function DisplayRC({
 }: DisplayRCProps) {
   const [loading, setLoading] = useState(true);
   return (
-    <div className="flex flex-col px-6 py-4 bg-white rounded-lg shadow-md gap-y-2">
+    <div className="flex flex-col px-6 py-4 bg-white dark:bg-slate-700 rounded-lg shadow-md gap-y-2">
       <div className="w-full overflow-hidden rounded-lg cursor-auto aspect-w-1 aspect-h-1">
         <Image
           alt={description}

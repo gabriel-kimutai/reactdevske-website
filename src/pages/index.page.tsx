@@ -7,7 +7,7 @@ import HeroHeader from '../components/HeroHeader';
 
 export default function Home() {
   return (
-    <div className="">
+    <div id='root' className='transition-all'>
       <Head>
         <title>Reactjs Developer Community in Kenya</title>
         <meta
@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main className="">
         <HeroHeader />
-        <div className="flex flex-col py-12 bg-white">
+        <div className="flex flex-col py-12 bg-white dark:bg-slate-700 dark:text-white">
           <AboutUs />
         </div>
         <MissionPillars />
