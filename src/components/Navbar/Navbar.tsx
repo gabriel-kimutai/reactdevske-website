@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Logo from '../Logo/Logo';
 
 import { ABOUT, CONTACT, EVENTS, HOME } from '../../util/routeConstants';
-import LinkButton from '../LinkButton/LinkButton';
 import ToggleButton from '../Button/ToggleButton';
 
 export default function Navbar() {
