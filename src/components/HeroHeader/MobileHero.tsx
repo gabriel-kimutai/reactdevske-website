@@ -9,7 +9,7 @@ import { HOME } from '../../util/routeConstants';
 
 export default function MobileHero() {
   return (
-    <div className="relative">
+    <div className="relative  dark:bg-slate-800 dark:text-white">
       <div className="mx-6 pt-2 pb-5 flex justify-between">
         <Link href={HOME}>
           <a>

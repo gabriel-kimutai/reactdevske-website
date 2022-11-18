@@ -7,6 +7,7 @@ import { ABOUT, CONTACT, EVENTS } from '../../util/routeConstants';
 import menuIcon from '../../../public/img/menu-icon.svg';
 import closeIcon from '../../../public/img/close-icon.svg';
 import { Menu } from '@headlessui/react';
+import ToggleButton from '../Button/ToggleButton';
 
 export default function DropdownMenu() {
   return (
@@ -14,7 +15,7 @@ export default function DropdownMenu() {
       <Menu.Button>
         {({ open }) =>
           open ? (
-            <div className="inline-flex justify-center items-center w-[30px] ">
+            <div className="inline-flex justify-center items-center w-[30px] dark:bg-slate-800 ">
               <Image src={closeIcon} alt="" width={20} height={20} />
             </div>
           ) : (
@@ -22,7 +23,7 @@ export default function DropdownMenu() {
           )
         }
       </Menu.Button>
-      <div className="bg-white rounded-[10px] overflow-hidden w-[158px] h-fit absolute top-14 right-5 shadow-[0_0_50px_-12px_rgb(0,0,0,0.25)]">
+      <div className="bg-white dark:bg-slate-800 rounded-[10px] overflow-hidden w-[158px] h-fit absolute top-14 right-5 shadow-[0_0_50px_-12px_rgb(0,0,0,0.25)]">
         <Menu.Items>
           <Menu.Item>
             {({ active }) => (
@@ -77,6 +78,7 @@ export default function DropdownMenu() {
               </a>
             )}
           </Menu.Item>
+          <Menu.Item>{({ active }) => <ToggleButton />}</Menu.Item>
         </Menu.Items>
       </div>
     </Menu>
